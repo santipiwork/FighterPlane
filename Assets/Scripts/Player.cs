@@ -52,14 +52,12 @@ public class Player : MonoBehaviour
 
         Vector3 pos = transform.position;
 
-        // Wrap horizontally (unchanged)
+        
         if (pos.x > horizontalScreenLimit || pos.x <= -horizontalScreenLimit)
         {
             pos.x = pos.x * -1f;
         }
 
-        // --- Clamp vertically to bottom half only ---
-        // Bottom edge = -verticalScreenLimit; Middle line = 0
         pos.y = Mathf.Clamp(pos.y, -verticalScreenLimit, 0f);
 
         transform.position = pos;
