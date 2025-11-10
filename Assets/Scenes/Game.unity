@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 619908762}
   - component: {fileID: 619908761}
   - component: {fileID: 619908760}
+  - component: {fileID: 619908764}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -230,6 +231,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &619908764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619908759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115d8d333cd733d4282c192af4ced29d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 6405400452280573197, guid: b1eed6253aa069845b0edf3f90db799d, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,6 +462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f62c54f11f389f2458ff7c03f3db9a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyOnePrefab: {fileID: 9207418728420716899, guid: 57d7aa5182902e24cb707961f14f52d5, type: 3}
+  enemyTwoPrefab: {fileID: 9207418728420716899, guid: c1559107af9bafb44918cb298ac84fc2, type: 3}
 --- !u!4 &2142600587
 Transform:
   m_ObjectHideFlags: 0
