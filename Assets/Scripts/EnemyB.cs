@@ -25,5 +25,28 @@ public class EnemyB : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("Bullet"))
+            {
+                if (GameManager.instance != null)
+                {
+                    GameManager.instance.AddScore(1);
+                }
+
+                Destroy(other.gameObject);
+                Destroy(gameObject);
+            }
+            else if (other.CompareTag("Player"))
+            {
+                if (GameManager.instance != null)
+                {
+                    GameManager.instance.AddLife(-1);
+                }
+
+                Destroy(gameObject);
+            }
+        }
     }
 }
